@@ -1,0 +1,50 @@
+>=dev-libs/libxml2-2.9.3 icu
+# required by x11-libs/libX11-1.6.3::gentoo
+# required by games-util/steam-launcher-1.0.0.49::gamerlay
+# required by games-util/steam-launcher (argument)
+>=x11-proto/kbproto-1.0.7 abi_x86_32
+# required by x11-libs/libXau-1.0.8::gentoo
+# required by x11-libs/libxcb-1.11.1::gentoo
+# required by x11-libs/libX11-1.6.3::gentoo
+# required by games-util/steam-launcher-1.0.0.49::gamerlay
+# required by games-util/steam-launcher (argument)
+>=x11-proto/xproto-7.0.28 abi_x86_32
+# required by x11-libs/libX11-1.6.3::gentoo
+# required by games-util/steam-launcher-1.0.0.49::gamerlay
+# required by games-util/steam-launcher (argument)
+>=x11-proto/xextproto-7.3.0 abi_x86_32
+# required by x11-libs/libX11-1.6.3::gentoo
+# required by games-util/steam-launcher-1.0.0.49::gamerlay
+# required by games-util/steam-launcher (argument)
+>=x11-libs/libxcb-1.11.1 abi_x86_32
+# required by x11-libs/libX11-1.6.3::gentoo
+# required by games-util/steam-launcher-1.0.0.49::gamerlay
+# required by games-util/steam-launcher (argument)
+>=x11-proto/inputproto-2.3.1 abi_x86_32
+# required by x11-libs/libxcb-1.11.1::gentoo
+# required by x11-libs/libX11-1.6.3::gentoo
+# required by games-util/steam-launcher-1.0.0.49::gamerlay
+# required by games-util/steam-launcher (argument)
+>=x11-proto/xcb-proto-1.11 abi_x86_32
+# required by x11-libs/libX11-1.6.3::gentoo
+# required by games-util/steam-launcher-1.0.0.49::gamerlay
+# required by games-util/steam-launcher (argument)
+>=x11-proto/xf86bigfontproto-1.2.0-r1 abi_x86_32
+# required by x11-libs/libxcb-1.11.1::gentoo
+# required by x11-libs/libX11-1.6.3::gentoo
+# required by games-util/steam-launcher-1.0.0.49::gamerlay
+# required by games-util/steam-launcher (argument)
+>=x11-libs/libXdmcp-1.1.2 abi_x86_32
+# required by x11-libs/libxcb-1.11.1::gentoo
+# required by x11-libs/libX11-1.6.3::gentoo
+# required by games-util/steam-launcher-1.0.0.49::gamerlay
+# required by games-util/steam-launcher (argument)
+>=dev-libs/libpthread-stubs-0.3-r1 abi_x86_32
+# required by x11-libs/libxcb-1.11.1::gentoo
+# required by x11-libs/libX11-1.6.3::gentoo
+# required by games-util/steam-launcher-1.0.0.49::gamerlay
+# required by games-util/steam-launcher (argument)
+>=x11-libs/libXau-1.0.8 abi_x86_32
+# required by games-util/steam-launcher-1.0.0.49::gamerlay
+# required by games-util/steam-launcher (argument)
+>=x11-libs/libX11-1.6.3 abi_x86_32

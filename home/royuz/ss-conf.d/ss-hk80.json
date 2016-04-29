@@ -1,0 +1,9 @@
+{
+  "server":"122.10.119.30",
+  "server_port":443,
+  "local_port":11201,
+  "password":"hk787700kkzz123%!",
+  "method":"aes-256-cfb",
+  "timeout":600,
+  "auth":false
+}

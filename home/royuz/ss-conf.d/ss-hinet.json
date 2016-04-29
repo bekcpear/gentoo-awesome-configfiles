@@ -1,0 +1,9 @@
+{
+  "server":"210.61.12.63",
+  "server_port":8086,
+  "local_port":11201,
+  "password":"237681.zoe!=$@",
+  "method":"aes-256-cfb",
+  "timeout":600,
+  "auth":false
+}
