@@ -130,6 +130,14 @@ shifty.config.tags = {
         exclusive = false,
         position  = 6,
     },
+    ["Design"] = {
+        layout    = awful.layout.suit.floating,
+        mwfact    = 0.60,
+        exclusive = false,
+        position  = 7,
+        persist   = true,
+    },
+ 
 --    web = {
 --        layout      = awful.layout.suit.tile.bottom,
 --        mwfact      = 0.65,
