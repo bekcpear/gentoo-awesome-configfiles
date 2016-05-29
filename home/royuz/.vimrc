@@ -1,10 +1,16 @@
-set backupdir=~/.vimbak
-set ts=2
-set expandtab
-set autoindent
 set encoding=utf-8
 set termencoding=utf-8  
 set fileencodings=utf-8,ucs-bom,gbk,default,latin1 
+
+set backupdir=~/.vimbak
+set ts=2
+set expandtab
+
+set autoindent
+set smartindent
+set cindent
+filetype indent on
+
 set cursorline
 
 set shiftwidth=2
@@ -13,8 +19,6 @@ set cindent
 "php
 syntax on
 set nu
-"set showmatch
-filetype plugin indent on
 set foldlevel=100
 set ai
 set si

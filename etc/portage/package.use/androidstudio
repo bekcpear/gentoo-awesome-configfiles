@@ -1,0 +1,23 @@
+dev-lang/php fpm mysqli mysql curl gd
+>=app-eselect/eselect-php-0.9.1 fpm
+# required by dev-util/android-studio-1.5.1.0.141.2456560::gentoo
+# required by android-studio (argument)
+>=x11-libs/libXrender-0.9.9 abi_x86_32
+# required by x11-libs/libXrender-0.9.9::gentoo
+# required by dev-util/android-studio-1.5.1.0.141.2456560::gentoo
+# required by android-studio (argument)
+>=x11-proto/renderproto-0.11.1-r1 abi_x86_32
+# required by media-libs/freetype-2.5.5::gentoo[bzip2]
+# required by dev-util/android-studio-1.5.1.0.141.2456560::gentoo
+# required by android-studio (argument)
+>=app-arch/bzip2-1.0.6-r6 abi_x86_32
+# required by dev-util/android-studio-1.5.1.0.141.2456560::gentoo
+# required by android-studio (argument)
+>=media-libs/fontconfig-2.11.1-r2 abi_x86_32
+# required by dev-util/android-studio-1.5.1.0.141.2456560::gentoo
+# required by android-studio (argument)
+>=media-libs/freetype-2.5.5 abi_x86_32
+# required by media-libs/freetype-2.5.5::gentoo[png]
+# required by dev-util/android-studio-1.5.1.0.141.2456560::gentoo
+# required by android-studio (argument)
+>=media-libs/libpng-1.6.19 abi_x86_32

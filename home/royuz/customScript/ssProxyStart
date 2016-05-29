@@ -1,5 +1,0 @@
-
-#/bin/sh
-
-sudo sslocal -c /home/royuz/ss-conf.d/ss-hk80.json -d start
-sudo /etc/init.d/polipo start

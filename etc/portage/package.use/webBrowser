@@ -10,3 +10,5 @@
 # required by www-client/chromium-50.0.2661.75::gentoo
 # required by chromium (argument)
 >=dev-libs/libxml2-2.9.3 icu
+
+www-client/chromium gtk3

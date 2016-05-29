@@ -1,0 +1,32 @@
+net-misc/owncloud-client qt5 -qt4
+# required by www-client/firefox-38.7.0::gentoo
+# required by firefox (argument)
+>=dev-lang/python-2.7.10-r1:2.7 sqlite
+# required by www-client/chromium-50.0.2661.75::gentoo
+# required by chromium (argument)
+>=media-libs/harfbuzz-1.1.3 icu
+# required by www-client/chromium-50.0.2661.75::gentoo
+# required by chromium (argument)
+>=sys-libs/zlib-1.2.8-r1 minizip
+# required by www-client/chromium-50.0.2661.75::gentoo
+# required by chromium (argument)
+>=dev-libs/libxml2-2.9.3 icu
+
+www-client/chromium gtk3
+# required by net-misc/owncloud-client-2.1.1::gentoo[qt5]
+# required by net-misc/owncloud-client (argument)
+>=dev-qt/qtwebkit-5.5.1-r1 printsupport
+# required by net-misc/owncloud-client-2.1.1::gentoo[qt5]
+# required by net-misc/owncloud-client (argument)
+>=dev-libs/qtkeychain-0.5.0 qt5
+# required by dev-qt/qtwebkit-5.5.1-r1::gentoo
+# required by net-misc/owncloud-client-2.1.1::gentoo[qt5]
+# required by net-misc/owncloud-client (argument)
+>=dev-qt/qtcore-5.5.1-r1 icu
+# required by dev-qt/qtcore-5.5.1-r1::gentoo
+# required by dev-qt/qttest-5.5.1::gentoo
+# required by dev-qt/qtdeclarative-5.5.1-r1::gentoo[-test]
+# required by dev-qt/qtquickcontrols-5.5.1-r1::gentoo
+# required by net-misc/owncloud-client-2.1.1::gentoo[qt5]
+# required by net-misc/owncloud-client (argument)
+>=dev-libs/libpcre-8.38 pcre16

@@ -14,6 +14,8 @@ local menubar = require("menubar")
 -- shifty - dynamic tagging library
 local shifty = require("shifty")
 
+require("volume")
+
 -- {{{ Error handling
 -- Check if awesome encountered an error during startup and fell back to
 -- another config (This code will only ever execute for the fallback config)
@@ -45,7 +47,7 @@ end
 beautiful.init("/home/royuz/.config/awesome/themes/default/theme.lua")
 
 -- This is used later as the default terminal and editor to run.
-terminal = "xterm -geometry 123x30+806+653"
+terminal = "xterm -geometry 123x30+812+659"
 editor = os.getenv("EDITOR") or "nano"
 editor_cmd = terminal .. " -e " .. editor
 
@@ -88,6 +90,15 @@ if beautiful.wallpaper then
 end
 -- }}}
 
+
+
+--awful.rules.rules = {
+--  { rule = { class = "MPlayer" }, properties = { floating = false } },
+--}
+
+
+
+
 -- Shifty configured tags.
 shifty.config.tags = {
     ["Normal"] = {
@@ -125,17 +136,24 @@ shifty.config.tags = {
         position  = 5,
         persist   = true,
     },
-    ["GIMP"] = {
-        layout    = awful.layout.suit.float,
+    ["Design0"] = {
+        layout    = awful.layout.suit.floating,
+        mwfact    = 0.60,
         exclusive = false,
         position  = 6,
+        persist   = true,
     },
-    ["Design"] = {
+    ["Design1"] = {
         layout    = awful.layout.suit.floating,
         mwfact    = 0.60,
         exclusive = false,
         position  = 7,
         persist   = true,
+    },
+    ["GIMP"] = {
+        layout    = awful.layout.suit.float,
+        exclusive = false,
+        position  = 9,
     },
  
 --    web = {
@@ -200,7 +218,6 @@ shifty.config.apps = {
 --    },
     {
         match = {
---            "Mplayer.*",
 --            "Mirage",
             "gimp",
 --            "gtkpod",
@@ -210,14 +227,14 @@ shifty.config.apps = {
         tag = "GIMP",
         nopopup = true,
     },
---    {
---        match = {
---            "MPlayer",
+    {
+        match = {
+            "MPlayer",
 --            "Gnuplot",
 --            "galculator",
---        },
---        float = true,
---    },
+        },
+        float = true,
+    },
 --    {
 --        match = {
 --            terminal,
@@ -358,6 +375,7 @@ for s = 1, screen.count() do
     -- Widgets that are aligned to the right
     local right_layout = wibox.layout.fixed.horizontal()
     if s == 1 then right_layout:add(wibox.widget.systray()) end
+    right_layout:add(volume_widget)
     right_layout:add(mytextclock)
     right_layout:add(mylayoutbox[s])
 
@@ -387,6 +405,14 @@ root.buttons(awful.util.table.join(
 
 -- {{{ Key bindings
 globalkeys = awful.util.table.join(
+    awful.key({ }, "XF86AudioLowerVolume", function () awful.util.spawn("sudo amixer -q sset Master 2dB-") end),
+    awful.key({ }, "XF86AudioRaiseVolume", function () awful.util.spawn("sudo amixer -q sset Master 2dB+") end),
+    awful.key({ }, "XF86AudioNext",function () awful.util.spawn( "mpc next" ) end),
+    awful.key({ }, "XF86AudioPrev",function () awful.util.spawn( "mpc prev" ) end),
+    awful.key({ }, "XF86AudioPlay",function () awful.util.spawn( "mpc play" ) end),
+    awful.key({ }, "XF86AudioStop",function () awful.util.spawn( "mpc pause" ) end),
+
+
     awful.key({ modkey,           }, "Left",   awful.tag.viewprev       ),
     awful.key({ modkey,           }, "Right",  awful.tag.viewnext       ),
     awful.key({ modkey,           }, "Escape", awful.tag.history.restore),
@@ -394,16 +420,23 @@ globalkeys = awful.util.table.join(
     -- Shifty: keybindings specific to shifty
     awful.key({modkey, "Shift"}, "d", shifty.del), -- delete a tag
     awful.key({modkey, "Shift"}, "n", shifty.send_prev), -- client to prev tag
-    awful.key({modkey}, "n", shifty.send_next), -- client to next tag
-    awful.key({modkey, "Control"},
-              "n",
-              function()
-                  local t = awful.tag.selected()
-                  local s = awful.util.cycle(screen.count(), awful.tag.getscreen(t) + 1)
-                  awful.tag.history.restore()
-                  t = shifty.tagtoscr(s, t)
-                  awful.tag.viewonly(t)
+    awful.key({ modkey,           }, "n",
+              function (c) 
+                -- The client currently has the input focus, so it cannot be
+                -- minimized, since minimized clients can't have the focus.
+                c.minimized = true
               end),
+    awful.key({ modkey, "Control" }, "n", awful.client.restore),
+--    awful.key({modkey}, "n", shifty.send_next), -- client to next tag
+--    awful.key({modkey, "Control"},
+--              "n",
+--              function()
+--                  local t = awful.tag.selected()
+--                  local s = awful.util.cycle(screen.count(), awful.tag.getscreen(t) + 1)
+--                  awful.tag.history.restore()
+--                  t = shifty.tagtoscr(s, t)
+--                  awful.tag.viewonly(t)
+--              end),
     awful.key({modkey}, "a", shifty.add), -- creat a new tag
     awful.key({modkey, "Shift"}, "r", shifty.rename), -- rename a tag
     awful.key({modkey, "Shift"}, "a", -- nopopup new tag
