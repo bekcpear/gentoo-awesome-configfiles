@@ -420,13 +420,14 @@ globalkeys = awful.util.table.join(
     -- Shifty: keybindings specific to shifty
     awful.key({modkey, "Shift"}, "d", shifty.del), -- delete a tag
     awful.key({modkey, "Shift"}, "n", shifty.send_prev), -- client to prev tag
-    awful.key({ modkey,           }, "n",
-              function (c) 
-                -- The client currently has the input focus, so it cannot be
-                -- minimized, since minimized clients can't have the focus.
-                c.minimized = true
-              end),
-    awful.key({ modkey, "Control" }, "n", awful.client.restore),
+    awful.key({modkey, "Control"}, "n", awful.client.restore), -- 
+    --awful.key({modkey,        }, "n",
+    --        function (c) 
+    --          -- The client currently has the input focus, so it cannot be
+    --          -- minimized, since minimized clients can't have the focus.
+    --          c.minimized = true
+    --        end),
+    --awful.key({ modkey, "Control" }, "n", awful.client.restore),
 --    awful.key({modkey}, "n", shifty.send_next), -- client to next tag
 --    awful.key({modkey, "Control"},
 --              "n",
