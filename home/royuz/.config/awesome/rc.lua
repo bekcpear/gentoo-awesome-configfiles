@@ -109,13 +109,13 @@ shifty.config.tags = {
         init      = true,
     },
     ["IM"] = {
-        layout    = awful.layout.suit.floating,
+        layout    = awful.layout.suit.fair,
         mwfact    = 0.60,
         exclusive = false,
         position  = 2,
         persist   = true,
     },
-    ["Note"] = {
+    ["Status"] = {
         layout    = awful.layout.suit.floating,
         mwfact    = 0.60,
         exclusive = false,
@@ -148,6 +148,13 @@ shifty.config.tags = {
         mwfact    = 0.60,
         exclusive = false,
         position  = 7,
+        persist   = true,
+    },
+    ["VMs"] = {
+        layout    = awful.layout.suit.floating,
+        mwfact    = 0.60,
+        exclusive = false,
+        position  = 8,
         persist   = true,
     },
     ["GIMP"] = {

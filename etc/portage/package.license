@@ -1,0 +1,6 @@
+# required by google-chrome (argument)
+>=www-client/google-chrome-50.0.2661.86 google-chrome
+# required by games-fps/ut2004-demo (argument)
+>=games-fps/ut2004-demo-3334 ut2003-demo
+# required by www-plugins/adobe-flash (argument)
+>=www-plugins/adobe-flash-11.2.202.621 AdobeFlash-11.x

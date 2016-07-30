@@ -1,0 +1,2 @@
+>=app-text/texlive-core-2014-r4 xetex cjk
+app-text/texlive xetex cjk extra epspdf linguas_zh

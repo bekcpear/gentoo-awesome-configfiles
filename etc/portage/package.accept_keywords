@@ -1,0 +1,14 @@
+# required by razercfg (argument)
+=sys-apps/razercfg-0.32 ~amd64
+# required by google-chrome (argument)
+=www-client/google-chrome-50.0.2661.86 ~amd64
+# required by games-util/steam-launcher (argument)
+=games-util/steam-launcher-1.0.0.49 ~amd64
+# required by steam-launcher (argument)
+=games-util/steam-launcher-1.0.0.51 ~amd64
+# required by net-misc/owncloud-client (argument)
+=net-misc/owncloud-client-2.1.1 ~amd64
+# required by netease-musicbox (argument)
+=media-sound/netease-musicbox-0.2.2.10 ~amd64
+# required by zsh-completions (argument)
+=app-shells/zsh-completions-0.18.0 ~amd64
