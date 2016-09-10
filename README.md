@@ -1,7 +1,8 @@
-# gentoo-awesome-configfiles
+My configuration files for Gentoo Linux.
 
-My gentoo configuration files
-
-Backup to avoid the problem about the system.
-
-`@Bekcpear`
+Widows Manager is Awesome.
+no initramfs file
+vim is configred for python now.
+.
+.
+.
