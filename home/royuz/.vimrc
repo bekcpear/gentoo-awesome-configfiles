@@ -29,8 +29,16 @@ let python_highlight_all=1
 
 Plugin 'scrooloose/nerdtree'
 Plugin 'kien/ctrlp.vim'
-Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
+let g:airline_powerline_fonts = 1
 set guifont=Sauce\ Code\ Powerline
+"Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
+"let g:powerline_pycmd = 'py3'
+"
+
+"Plugin 'chriskempson/base16-vim'
+"let base16colorspace=256  " Access colors present in 256 colorspace
 
 " Add all your plugins here (note older versions of Vundle used Bundle instead of Plugin)
 
@@ -48,9 +56,6 @@ autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 map <C-n> :NERDTreeToggle<CR>
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
-" Enable folding
-set foldmethod=indent
-set foldlevel=99
 
 " Python
 au BufNewFile,BufRead *.py
@@ -61,21 +66,46 @@ au BufNewFile,BufRead *.py
 \set expandtab
 \set autoindent
 \set fileformat=unix
+\set foldmethod=indent " Enable folding
+\set foldlevel=99
 
-" Others
-au BufNewFile,BufRead *.js, *.html, *.css
-      \set tabstop=2
-      \set softtabstop=2
-      \set shiftwidth=2
+" html & css
+au BufNewFile,BufRead *.html, *.css
+\set tabstop=2
+\set softtabstop=2
+\set shiftwidth=2
+\set expandtab
 
-" older
+" javascript
+au BufNewFile,BufRead *.js
+\set tabstop=2
+\set shiftwidth=2
+\set expandtab
+
+au BufNewFile,BufRead *.php
+\set tabstop=2
+\set softtabstop=2
+\set shiftwidth=2
+\set expandtab
+\set autoindent
+\set fileformat=unix
+
+
+"+++++++++++++++++++++++++++++++++++++++++++++++++++++++
+"+++++++++++++++++++++++++++++++++++++++++++++++++++++++
+"+ older +++++++++++++++++++++++++++++++++++++++++++++++
+"+++++++++++++++++++++++++++++++++++++++++++++++++++++++
 set encoding=utf-8
 set termencoding=utf-8  
 set fileencodings=utf-8,ucs-bom,gbk,default,latin1 
 if has('gui_running')
   set background=dark
+  "colorscheme desert
   colorscheme solarized
+  let g:solarized_degrade = 0
   "colorscheme molokai
+  "colorscheme wombat256
+  "colorscheme base16-solar-flare
   "let g:molokai_original = 1
   "let g:rehash256 = 1
   set guioptions-=m " 隐藏菜单栏
@@ -85,8 +115,10 @@ if has('gui_running')
   set guioptions-=b " 隐藏底部滚动条
 else
   colorscheme molokai
+  "colorscheme base16-google-dark
 endif
 
+set t_Co=256
 set backupdir=~/.vimbak
 set ts=2
 set expandtab
@@ -101,7 +133,6 @@ set cursorline
 set shiftwidth=2
 set cindent
 
-"php
 syntax on
 set nu
 set foldlevel=100
