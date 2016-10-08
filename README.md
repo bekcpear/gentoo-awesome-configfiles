@@ -4,3 +4,5 @@
 + no initramfs file
 + vim is configred for python now.
 + ...
+
+![screenshot](screenshot.png)
