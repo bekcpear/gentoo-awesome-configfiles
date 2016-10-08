@@ -1,0 +1,2 @@
+# required by netease-cloud-music (argument)
+>=dev-qt/qtmultimedia-5.6.1 gstreamer widgets

@@ -12,3 +12,25 @@
 =media-sound/netease-musicbox-0.2.2.10 ~amd64
 # required by zsh-completions (argument)
 =app-shells/zsh-completions-0.18.0 ~amd64
+# required by net-proxy/obfsproxy-0.2.13::gentoo
+# required by obfsproxy (argument)
+=dev-python/pyptlib-0.0.6 ~amd64
+# required by obfsproxy (argument)
+=net-proxy/obfsproxy-0.2.13 ~amd64
+# custom php 7.0.10
+>=dev-lang/php-7.0.10 ~amd64
+# required by netease-cloud-music (argument)
+>=media-sound/netease-cloud-music-0.9.0-r2 ~amd64
+# required by x11-libs/pango-1.38.1::gentoo
+# required by media-sound/netease-cloud-music-0.9.0-r2::gentoo-zh
+# required by netease-cloud-music (argument)
+=media-libs/fontconfig-2.12.1 ~amd64
+# required by media-sound/netease-cloud-music-0.9.0-r2::gentoo-zh
+# required by netease-cloud-music (argument)
+=sys-devel/gcc-5.4.0 ~amd64
+# required by app-i18n/librime-9999::gentoo-zh
+# required by app-i18n/fcitx-rime-0.3.1::gentoo
+# required by @selected
+# required by @world (argument)
+=app-i18n/opencc-1.0.4 ~amd64
+sys-apps/lm_sensors ~amd64

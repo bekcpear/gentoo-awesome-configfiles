@@ -1,3 +1,3 @@
-dev-lang/php fpm mysqli mysql curl gd
+>=dev-lang/php-7.0.10 fpm mysqli mysql curl gd pdo zip xmlreader xmlwriter
 >=app-eselect/eselect-php-0.9.1 fpm
 www-servers/nginx -http-cache

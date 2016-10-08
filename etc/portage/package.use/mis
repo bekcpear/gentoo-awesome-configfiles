@@ -1,1 +1,4 @@
 app-text/asciidoc PYTHON_SINGLE_TARGET: -* python2_7
+app-editors/vim python
+app-editors/gvim python 
+app-editors/emacs -alsa xft

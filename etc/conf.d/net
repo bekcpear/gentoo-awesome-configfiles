@@ -1,12 +1,25 @@
-#config_enp0s31f6="192.168.1.199 netmask 255.255.255.0 brd 192.168.1.255"
-#routes_enp0s31f6="default via 192.168.1.1"
-#dns_servers_enp0s31f6="119.29.29.29 208.67.222.222 223.5.5.5"
+modules="iproute2"
+#config_enp0s31f6="10.0.0.7 netmask 255.255.255.0"
+#routes_enp0s31f6="default via 10.0.0.1"
+#                  default via fe80::ae9e:17ff:fe79:ffec dev enp0s31f6"
+#                 default via 240e:ec:4412:7527:ae9e:17ff:ef79:ffec"
+#                             240e:ec:4412:7527:ae9e:17ff:ef79:ffec
+#                  default via fe80::ae9e:17ff:fe79:ffec
+#                  240e:ec:4412:71f2::/64 via 240e:ec:4412:71f2:ae9e:17ff:ef79:ffec"
+#dns_servers_enp0s31f6="2001:4860:4860::8888 119.29.29.29 208.67.222.222 223.5.5.5"
 
 tuntap_tap0="tap"
 config_tap0=null
 config_enp0s31f6=null
 
-config_br0="192.168.1.199 netmask 255.255.255.0 brd 192.168.1.255"
+#config_br0="fe80::ae9e:17ff:fe79:ffed/64"
+#routes_br0="default via fe80::ae9e:17ff:fe79:ffec"     
+#config_br0="192.168.1.199/24 240e:ec:4412:95be::199/64"
+config_br0="192.168.1.199/24"
 routes_br0="default via 192.168.1.1"
+#            default via 240e:ec:4412:95be::1 dev br0"
+#default via 240e:ec:4412:71f2:ae9e:17ff:ef79:ffec"
+#default via 240e:ec:4412:71f2:bc23:f52:a7a9:8a1b"
+dns_servers_br0="119.29.29.29 208.67.222.222 223.5.5.5" #2001:4860:4860::8888
 bridge_br0="enp0s31f6 tap0"
 rc_net_br0_need="net.enp0s31f6 net.tap0"

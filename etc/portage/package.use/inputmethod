@@ -1,2 +1,2 @@
 app-i18n/ibus gconf
-app-i18n/fcitx gtk3 opencc
+app-i18n/fcitx gtk2 gtk3 opencc
