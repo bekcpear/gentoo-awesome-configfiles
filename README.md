@@ -6,3 +6,5 @@
 + ...
 
 ![screenshot](screenshot.png)
+
+关于配色的简单介绍看[这里](intro/aboutColor.md)
