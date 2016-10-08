@@ -47,7 +47,10 @@ end
 beautiful.init("/home/royuz/.config/awesome/themes/default/theme.lua")
 
 -- This is used later as the default terminal and editor to run.
-terminal = "xterm -geometry 123x30+812+659"
+--terminal = "xterm -geometry 200x60+812+655"
+terminal    = "xterm -geometry 155x50+526+400"
+terminal_up = "xterm -geometry 155x23+526+20"
+terminal_le = "xterm -geometry 58x73+1+32"
 editor = os.getenv("EDITOR") or "nano"
 editor_cmd = terminal .. " -e " .. editor
 
@@ -95,69 +98,70 @@ end
 --awful.rules.rules = {
 --  { rule = { class = "MPlayer" }, properties = { floating = false } },
 --}
+--awful.rules.rules = {
+--  { rule = { class = "xterm" }, properties = { size_hints_honor = false } },
+--}
 
 
 
 
 -- Shifty configured tags.
 shifty.config.tags = {
-    ["Normal"] = {
+    ["I:Normal"] = {
         layout    = awful.layout.suit.floating,
         mwfact    = 0.60,
         exclusive = false,
         position  = 1,
         init      = true,
     },
-    ["IM"] = {
-        layout    = awful.layout.suit.fair,
+    ["::extend"] = {
+        layout    = awful.layout.suit.floating,
         mwfact    = 0.60,
         exclusive = false,
         position  = 2,
         persist   = true,
     },
-    ["Status"] = {
+    ["III:Status"] = {
         layout    = awful.layout.suit.floating,
         mwfact    = 0.60,
         exclusive = false,
         position  = 3,
         persist   = true,
     },
-    ["Music"] = {
+    ["IV:Music"] = {
         layout    = awful.layout.suit.floating,
         mwfact    = 0.60,
         exclusive = false,
         position  = 4,
         persist   = true,
     },
-    ["SU"] = {
+    ["V:SU"] = {
         layout    = awful.layout.suit.floating,
         mwfact    = 0.60,
         exclusive = false,
         position  = 5,
         persist   = true,
     },
-    ["Design0"] = {
+    ["VI:Design0"] = {
         layout    = awful.layout.suit.floating,
         mwfact    = 0.60,
         exclusive = false,
         position  = 6,
         persist   = true,
     },
-    ["Design1"] = {
+    ["VII:Design1"] = {
         layout    = awful.layout.suit.floating,
         mwfact    = 0.60,
         exclusive = false,
         position  = 7,
         persist   = true,
     },
-    ["VMs"] = {
-        layout    = awful.layout.suit.floating,
-        mwfact    = 0.60,
+    ["VIII:IM"] = {
+        layout    = awful.layout.suit.fair,
         exclusive = false,
         position  = 8,
-        persist   = true,
     },
-    ["GIMP"] = {
+    ["IX:GIMP"] = {
         layout    = awful.layout.suit.float,
         exclusive = false,
         position  = 9,
@@ -215,14 +219,16 @@ shifty.config.apps = {
 --        },
 --        slave = true
 --    },
---    {
---        match = {
+    {
+        match = {
 --            "OpenOffice.*",
 --            "Abiword",
 --            "Gnumeric",
---        },
---        tag = "office",
---    },
+            "Telegram"
+        },
+        tag = "VIII:IM",
+        nopopup = true,
+    },
     {
         match = {
 --            "Mirage",
@@ -231,7 +237,7 @@ shifty.config.apps = {
 --            "Ufraw",
 --            "easytag",
         },
-        tag = "GIMP",
+        tag = "IX:GIMP",
         nopopup = true,
     },
     {
@@ -299,6 +305,7 @@ mylauncher = awful.widget.launcher({ image = beautiful.awesome_icon,
 
 -- Menubar configuration
 menubar.utils.terminal = terminal -- Set the terminal for applications that require it
+menubar.menu_gen.all_menu_dirs = { "/usr/share/applications/", "~/.local/share/applications" }
 -- }}}
 
 -- {{{ Wibox
@@ -480,6 +487,8 @@ globalkeys = awful.util.table.join(
 
     -- Standard program
     awful.key({ modkey,           }, "Return", function () awful.util.spawn(terminal) end),
+    awful.key({ modkey, "Control" }, "Return", function () awful.util.spawn(terminal_up) end),
+    awful.key({ modkey, "Shift"   }, "Return", function () awful.util.spawn(terminal_le) end),
     awful.key({ modkey, "Control" }, "r", awesome.restart),
     awful.key({ modkey, "Shift"   }, "q", awesome.quit),
 

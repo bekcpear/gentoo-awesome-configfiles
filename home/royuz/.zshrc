@@ -20,11 +20,11 @@ colors
 compinit
 promptinit
 
-RPROMPT="%{$fg_bold[cyan]%} %w %{$reset_color%}%*%K{00}%F{15} %K{15}%F{00} %h %f%k"
+RPROMPT="%F{81} %w %{$reset_color%}%*%K{234}%F{15} %K{15}%F{00} %h %f%k"
 #PROMPT="%K{24} %{$fg_bold[white]%}%n@%m %d 
 #PROMPT="%K{08} %{$fg_bold[white]%}%n@%m %K{15}%F{08}%K{15}%F{08} %d %K{00}%F{15}%{$reset_color%} %F{00}%K{14}%{$reset_color%}%F{14}%K{24} %{$fg_bold[white]%}%# %K{00}%F{24}%{$reset_color%} %f%k"
 #PROMPT="%K{08} %{$fg_bold[white]%}%n %K{08}%F{15}%f%k%{$reset_color%}%K{08}%F{08}%K{08}%F{15}%K{15}%F{15}%F{08}%~%K{15}%F{15}%K{15}%F{00}
-PROMPT="%K{08} %{$fg_bold[white]%}%n %f%k%{$reset_color%}%K{08}%F{15}%K{15}%F{15}%F{08}%~%K{15}%F{15}%K{15}%F{00}
-%{$reset_color%} %F{00}%K{14}%{$reset_color%}%F{14}%K{24} %{$fg_bold[white]%}%# %K{00}%F{24}%{$reset_color%} %f%k"
+PROMPT="%K{236}%F{15} %n %f%k%K{236}%F{07}%K{07}%F{07}%F{08}%~%K{07}%F{07}%K{07}%F{234}%f%k
+ %F{234}%K{45}%F{45}%K{24} %{$fg_bold[white]%}%# %K{234}%F{24}%{$reset_color%} %f%k"
 source /home/royuz/.zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source /home/royuz/.dvm/dvm.sh
