@@ -76,7 +76,7 @@ createdate-meta: 2016-10-08
 #        curses.init_pair(4, curses.COLOR_YELLOW, curses.COLOR_BLACK)
 ```
 
-关于直接显示当前终端下255色的python脚本如下：
+关于直接显示当前终端下256色的python脚本如下：
 ```
 import curses
 
