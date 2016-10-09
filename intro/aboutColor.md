@@ -118,7 +118,7 @@ curses.wrapper(main)
 ```
 
 目前网易云音乐MusicBox的截图：
-![musicbox](musicbox_screenshot.png)
+![musicbox](mis/musicbox_screenshot.png)
 
 目前终端颜色设置情况（By Python）：
-![xtermColorByPython](color-256.png)
+![xtermColorByPython](mis/color-256.png)

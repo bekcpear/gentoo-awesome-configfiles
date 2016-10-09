@@ -25,4 +25,7 @@ Exec=mymusic
 Categories=AudioVideo;Player;
 ```
 
-sakura 默认从 `/usr/share/pixmaps/` 这个目录下读取 `terminal-tango.svg` 这个图标使用，直接改成自己修改的网易云音乐的矢量图标![图标](netease-cloud-music.svg)
+sakura 默认从 `/usr/share/pixmaps/` 这个目录下读取 `terminal-tango.svg` 这个图标使用，直接改成自己修改的网易云音乐的矢量图标![图标](mis/netease-cloud-music.svg)
+
+目前 musicbox 看上去的样子：
+![musicbox screenshot](mis/musicbox_screenshot_with_sakura_terminal.png)
