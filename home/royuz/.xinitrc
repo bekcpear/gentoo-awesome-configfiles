@@ -13,7 +13,7 @@ fcitx &
 owncloud &
 #ibus-daemon -dx
 xcompmgr &
-devilspie -a &
+devilspie2 &
 exec awesome
 #exec dbus-launch --sh-syntax --exit-with-session awesome
 #exec openbox
