@@ -1,7 +1,7 @@
 #!/bin/bash
 #
 
-read -p "Changes: " changes
+read -r -e -p "Changes: " changes
 
 git add .
 eval "git commit -m '$changes'"
