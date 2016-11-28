@@ -3,7 +3,7 @@
 这里面将会是一些简单的脚本
 
 + [ydcv.sh](#ydcvsh) [2016-11-28更新]
-+ [checkDepsUse.sh](#checkDepsUsesh) [2016-11-28更新]
++ [checkDepsUse.sh](#checkdepsusesh) [2016-11-28更新]
 
 
 
