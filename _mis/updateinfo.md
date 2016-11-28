@@ -2,7 +2,7 @@
 
 
 ###2016-11-28
-1. 创建 home/royuz/custom\_scripts/ 目录，一些脚本会放到里面去。关于脚本的说明看该目录下说明文档
+1. 创建 [home/royuz/custom\_scripts/](../home/royuz/custom_scripts) 目录，一些脚本会放到里面去。关于脚本的说明看该目录下说明文档
 
 
 ###2016-10-09
