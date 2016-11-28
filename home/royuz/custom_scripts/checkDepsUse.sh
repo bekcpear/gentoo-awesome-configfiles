@@ -103,6 +103,8 @@ function show(){
 if [ $singleMod -eq 1 ];then
   show $1
 else
+  echo "  Checking dependencies.."
+  echo 
   deps=$(equery g $1) 
   if [ $? -ne 0 ]; then
     echo "Error: package does not exist."
