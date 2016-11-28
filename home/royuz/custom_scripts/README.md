@@ -1,6 +1,6 @@
 ##说明
 
-这里面是一些简单的脚本
+这里面将会是一些简单的脚本
 
 ### checkDepsUse.sh
 ```
@@ -14,5 +14,8 @@ Usage: ./checkDepsUse.sh packageName [--single] [--show-comment]
 
 ```
 如图：
+
 ![checkDepsUse.png](../../../_mis/mis/checkDepsUse.png)
 ![checkDepsUse-s.png](../../../_mis/mis/checkDepsUse-s.png)
+
+可以发现，重复的真多.. 我也懒得整理
