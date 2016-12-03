@@ -1,5 +1,8 @@
 ##这里是一些更新说明
 
+###2016-12-04
+1. 调整了一个窗口尺寸，详细的看[这里](../home/royuz/README.md)。
+
 
 ###2016-11-28
 1. 创建 [home/royuz/custom\_scripts/](../home/royuz/custom_scripts) 目录，一些脚本会放到里面去。关于脚本的说明看该目录下说明文档
