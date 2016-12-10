@@ -2,9 +2,20 @@
 
 这里面将会是一些简单的脚本
 
++ [wikiChk.sh](#wikichksh) [2016-12-10更新]
 + [ydcv.sh](#ydcvsh) [2016-11-28更新]
 + [checkDepsUse.sh](#checkdepsusesh) [2016-11-28更新]
 
+
+
+###wikiChk.sh
+
+先上图：
+
+![wikiChk.gif](../../../_mis/mis/wikiChk.gif)
+
+一个 bash 下查询 Wikipedia 的小脚本，目的是获取一些相对应的__简要__信息。上图已经说明的挺明显了，不知道是 Wikipedia 的 API 太烂，还是我水平太菜，反正是半成品，很多东西明明网页上是可以自动跳转的，但是通过 API 获取的就是提示一个本页需要跳转，也不提示跳转到哪个 Title 下，差了 N 久也没查到哪个 API 下有说明，遂放弃，服务器端有时候查查东西可能还是比较方便的，支持中文，但是稳定性和 Bug 均未测试。
+需要 [jq](https://stedolan.github.io/jq/) 和 curl 支持。
 
 
 ###ydcv.sh
