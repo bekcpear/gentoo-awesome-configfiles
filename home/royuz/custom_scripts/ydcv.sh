@@ -2,10 +2,9 @@
 #
 # Created by Bekcpear
 
+blackCharOpt="break"
 apif=""
 apikey=""
-
-blackCharOpt="break"
 
 function iniQ(){
   r=$(eval "echo '$data' | jq '$1'")
@@ -115,10 +114,13 @@ function main(){
 
 tranStr=$1
 if [ "$tranStr"x == ""x ];then
+  clear
   while true;do
     printf "\e[4m\e[3m\e[1mEnter a word or phrase\e[0m: "
     read -r -e tranStr
     [ "$tranStr"x == ""x ] && eval "$blackCharOpt"
+    history -s "$tranStr"
+#  while read -e -r -p "> " tranStr;do
     main
   done
   exit 0
