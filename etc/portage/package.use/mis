@@ -1,4 +1,24 @@
 app-text/asciidoc PYTHON_SINGLE_TARGET: -* python2_7
 app-editors/vim python
-app-editors/gvim python 
+app-editors/gvim python gtk3
 app-editors/emacs -alsa xft
+app-misc/vifm vim vim-syntax
+net-misc/aria2 bittorrent metalink xmlrpc
+# required by "app-crypt/gnupg-2.1.15
+# required by "dev-vcs/git-2.7.3-r1
+# required by "www-client/chromium-55.0.2883.75
+>=app-crypt/pinentry-0.9.5 qt5 -qt4
+net-irc/weechat lua
+app-emulation/docker btrfs
+# required by app-emulation/docker-1.11.0::gentoo[seccomp]
+# required by app-emulation/docker (argument)
+>=sys-libs/libseccomp-2.3.0 static-libs
+# required by app-emulation/docker-1.13.0_rc3-r1::gentoo[container-init]
+# required by app-emulation/docker (argument)
+>=sys-process/tini-0.13.0-r1 static
+# required by x11-terms/terminator-0.97-r1::gentoo
+# required by terminator (argument)
+>=x11-libs/vte-0.28.2-r207:0 python
+# required by x11-terms/terminator-0.97-r1::gentoo
+# required by terminator (argument)
+>=dev-libs/keybinder-0.3.1-r200:0 python

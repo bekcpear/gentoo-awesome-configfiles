@@ -25,7 +25,7 @@ promptinit
 #PROMPT="%K{08} %{$fg_bold[white]%}%n %K{08}%F{15}%f%k%{$reset_color%}%K{08}%F{08}%K{08}%F{15}%K{15}%F{15}%F{08}%~%K{15}%F{15}%K{15}%F{00}
 #PROMPT="%K{08} %{$fg_bold[white]%}%n@%m %K{15}%F{08}%K{15}%F{08} %d %K{00}%F{15}%{$reset_color%} %F{00}%K{14}%{$reset_color%}%F{14}%K{24} %{$fg_bold[white]%}%# %K{00}%F{24}%{$reset_color%} %f%k"
 
-#setopt PROMPT_SUBST
+setopt PROMPT_SUBST
 #function precmd() {
 precmd () {print -Pn "\e]0;%n@%m: %~\a"}
 PROMPT="%K{236}%F{15} %n %f%k%K{236}%F{07}%K{07}%F{07}%F{08}%~%K{07}%F{07}%K{07}%F{234}%f%k

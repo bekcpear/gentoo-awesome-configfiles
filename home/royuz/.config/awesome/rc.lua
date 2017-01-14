@@ -51,6 +51,7 @@ beautiful.init("/home/royuz/.config/awesome/themes/default/theme.lua")
 terminal    = "xterm -geometry 155x50+526+400"
 terminal_up = "xterm -geometry 155x23+526+20"
 terminal_le = "xterm -geometry 58x73+1+32"
+terminal_min= "xterm -geometry 213x6+1+18"
 editor = os.getenv("EDITOR") or "nano"
 editor_cmd = terminal .. " -e " .. editor
 
@@ -156,15 +157,22 @@ shifty.config.tags = {
         position  = 7,
         persist   = true,
     },
-    ["VIII:IM"] = {
-        layout    = awful.layout.suit.fair,
+    ["VIII:Design2"] = {
+        layout    = awful.layout.suit.floating,
+        mwfact    = 0.60,
         exclusive = false,
         position  = 8,
+        persist   = true,
     },
-    ["IX:GIMP"] = {
-        layout    = awful.layout.suit.float,
+    ["IX:IM"] = {
+        layout    = awful.layout.suit.floating,
         exclusive = false,
         position  = 9,
+    },
+    ["EXT:GIMP"] = {
+        layout    = awful.layout.suit.float,
+        exclusive = false,
+        position  = 10,
     },
  
 --    web = {
@@ -226,7 +234,7 @@ shifty.config.apps = {
 --            "Gnumeric",
             "Telegram"
         },
-        tag = "VIII:IM",
+        tag = "IX:IM",
         nopopup = true,
     },
     {
@@ -237,7 +245,7 @@ shifty.config.apps = {
 --            "Ufraw",
 --            "easytag",
         },
-        tag = "IX:GIMP",
+        tag = "EXT:GIMP",
         nopopup = true,
     },
     {
@@ -489,6 +497,7 @@ globalkeys = awful.util.table.join(
     awful.key({ modkey,           }, "Return", function () awful.util.spawn(terminal) end),
     awful.key({ modkey, "Control" }, "Return", function () awful.util.spawn(terminal_up) end),
     awful.key({ modkey, "Shift"   }, "Return", function () awful.util.spawn(terminal_le) end),
+    awful.key({ modkey, "Shift", "Control" }, "Return", function () awful.util.spawn(terminal_min) end),
     awful.key({ modkey, "Control" }, "r", awesome.restart),
     awful.key({ modkey, "Shift"   }, "q", awesome.quit),
 

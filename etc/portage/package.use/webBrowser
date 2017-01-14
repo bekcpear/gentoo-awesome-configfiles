@@ -12,3 +12,9 @@
 >=dev-libs/libxml2-2.9.3 icu
 
 www-client/chromium gtk3
+
+# required by www-client/chromium-54.0.2840.59::gentoo
+# required by @selected
+# required by @world (argument)
+>=media-libs/libvpx-1.5.0 svc
+# net-misc/tor libressl scrypt transparent-proxy

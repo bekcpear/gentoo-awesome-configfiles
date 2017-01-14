@@ -8,12 +8,14 @@ export GTK_IM_MODULE=fcitx
 
 [[ -f ~/.Xresources ]] && xrdb -merge -I$HOME ~/.Xresources
 
-/home/royuz/customScript/ssProxyStart
+/home/royuz/customScripts/ssProxy start
 fcitx &
 owncloud &
 #ibus-daemon -dx
 xcompmgr &
 devilspie2 &
+redshift -t 5500K:4500K &
+/home/royuz/Telegram/Telegram &
 exec awesome
 #exec dbus-launch --sh-syntax --exit-with-session awesome
 #exec openbox

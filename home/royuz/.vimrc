@@ -69,12 +69,12 @@ au BufNewFile,BufRead *.py
 \set foldmethod=indent " Enable folding
 \set foldlevel=99
 
-" html & css
-au BufNewFile,BufRead *.html, *.css
+" css
+au BufNewFile,BufRead *.css
 \set tabstop=2
-\set softtabstop=2
 \set shiftwidth=2
 \set expandtab
+\set softtabstop=2
 
 " javascript
 au BufNewFile,BufRead *.js
@@ -151,6 +151,6 @@ set noerrorbells
 set novisualbell
 " Highlight search things
 set hlsearch
-" smart backspace
+"smart backspace
 set backspace=start,indent,eol
 

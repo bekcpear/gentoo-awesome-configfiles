@@ -1,0 +1,11 @@
+x11-drivers/xf86-video-intel uxa xvmc
+x11-misc/slim consolekit
+# required by sys-power/suspend-1.0_p20150810::gentoo[crypt]
+# required by suspend (argument)
+>=dev-libs/libgpg-error-1.24 static-libs
+# required by sys-power/suspend-1.0_p20150810::gentoo[crypt]
+# required by suspend (argument)
+>=dev-libs/libgcrypt-1.7.3 static-libs
+# required by sys-power/suspend-1.0_p20150810::gentoo[lzo]
+# required by suspend (argument)
+>=dev-libs/lzo-2.08 static-libs

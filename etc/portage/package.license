@@ -1,4 +1,4 @@
 # required by games-fps/ut2004-demo (argument)
 >=games-fps/ut2004-demo-3334 ut2003-demo
-# required by www-plugins/chrome-binary-plugins (argument)
->=www-plugins/chrome-binary-plugins-53.0.2785.143:stable google-chrome
+# required by www-plugins/adobe-flash (argument)
+>=www-plugins/adobe-flash-23.0.0.185 AdobeFlash-11.x

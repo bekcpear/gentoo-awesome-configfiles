@@ -13,6 +13,9 @@ xterm*faceName:Cousine for Powerline:antialias=True:pixelsize=15
 xterm*faceNameDoublesize:Source Han Sans SC:style=regular:antialias=True:pixelsize=14
 !xterm*faceSize:8
 
+XTerm*metaSendsEscape: true
+XTerm*eightBitInput: false
+
 !??
 XTerm*internalBorder: 0
 XTerm*loginShell: true
@@ -68,16 +71,43 @@ XTerm*VT100.translations: #override <Btn1Up>: select-end(PRIMARY, CLIPBOARD, CUT
 *color8: #343434
 
 ! red
-*color1: #b66d80
+!*color1: #bc8776
 
 ! bright_red
-*color9: #dfbfc8
+!*color9: #dec3ba
 
 ! green
-*color2: #80b66d
+!*color2: #76bc87
 
 ! bright_green
-*color10: #c8dfbf
+!*color10: #badec3
+
+! red
+*color1: #b66d80
+!*color1: #c04b56
+!
+! ! bright_red
+*color9: #cd7079
+!
+! ! green
+!*color2: #56c04b
+*color2: #79cd70
+
+! ! bright_green
+*color10: #80b66d
+!*color10: #79cd70
+
+! red
+!*color1: #b66d80
+
+! bright_red
+!*color9: #dfbfc8
+
+! green
+!*color2: #80b66d
+
+! bright_green
+!*color10: #c8dfbf
 
 ! yellow
 *color3: #b6a26d
@@ -251,3 +281,5 @@ XTerm*colorUL        : _colorUL
 !XTerm*background     : _background
 XTerm*cursorColor    : _cursorColor
 !!!!Scheme 0 E n d -----------
+
+

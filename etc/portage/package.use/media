@@ -1,2 +1,3 @@
 media-video/vlc qt5 -qt4
 media-video/smplayer qt5 -qt4
+media-video/ffmpeg gnutls openssl
