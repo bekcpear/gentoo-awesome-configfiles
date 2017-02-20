@@ -11,6 +11,7 @@ call vundle#begin()
 " call vundle#begin('~/some/path/here')
 
 " let Vundle manage Vundle, required
+Plugin 'fatih/vim-go'
 Plugin 'gmarik/Vundle.vim'
 Plugin 'jnurmine/Zenburn'
 
@@ -45,6 +46,7 @@ set guifont=Sauce\ Code\ Powerline
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
+syntax on
 
 """""""""""""""""""""""""""""""""""""""""
 """"" Vundle Configuration E n d"""""""""
@@ -126,14 +128,12 @@ set expandtab
 set autoindent
 set smartindent
 set cindent
-filetype indent on
 
 set cursorline
 
 set shiftwidth=2
 set cindent
 
-syntax on
 set nu
 set foldlevel=100
 set ai

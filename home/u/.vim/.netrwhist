@@ -1,0 +1,6 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =4
+let g:netrw_dirhist_1='/home/royuz/gentoo-awesome-configfiles/.git'
+let g:netrw_dirhist_2='/home/royuz/.local/share/data/ownCloud'
+let g:netrw_dirhist_3='/var/www/localhost/thinkcc_ref/ref'
+let g:netrw_dirhist_4='/var/www/localhost/thinkcc_ref/ref/pdf_view'
