@@ -1,17 +1,18 @@
 !fonts
-xterm*font: -*-fixed-medium-r-*-*-18-*-*-*-*-*-iso8859-*
-xterm*boldFont: -*-fixed-medium-r-*-*-18-*-*-*-*-*-iso8859-*
-xterm*font1: -*-*-*-*-*-*-2-*-*-*-*-*-*-*
-xterm*font2: -misc-fixed-*-r-normal-*-8-*-*-*-*-*-iso8859-*
-xterm*font3: -b&h-lucidatypewriter-bold-*-*-*-12-*-*-*-*-*-*-*
-xterm*font4: -*-screen-bold-r-normal-*-16-*-*-*-*-*-iso8859-*
-xterm*font5: -*-lucidatypewriter-medium-*-*-*-18-*-*-*-*-*-*-*
-xterm*font6: -*-lucidatypewriter-medium-*-*-*-20-*-*-*-*-*-*-*
-xterm*font7: -dec-terminal-normal-r-normal-*-14-*-*-*-*-*-iso8859-*
-!xterm*faceName:Consolas:antialias=True:pixelsize=16
-xterm*faceName:Cousine for Powerline:antialias=True:pixelsize=15
-xterm*faceNameDoublesize:Source Han Sans SC:style=regular:antialias=True:pixelsize=14
-!xterm*faceSize:8
+!xterm*font: -*-fixed-medium-r-*-*-18-*-*-*-*-*-iso8859-*
+!xterm*boldFont: -*-fixed-medium-r-*-*-18-*-*-*-*-*-iso8859-*
+!xterm*font1: -*-*-*-*-*-*-2-*-*-*-*-*-*-*
+!xterm*font2: -misc-fixed-*-r-normal-*-8-*-*-*-*-*-iso8859-*
+!xterm*font3: -b&h-lucidatypewriter-bold-*-*-*-12-*-*-*-*-*-*-*
+!xterm*font4: -*-screen-bold-r-normal-*-16-*-*-*-*-*-iso8859-*
+!xterm*font5: -*-lucidatypewriter-medium-*-*-*-18-*-*-*-*-*-*-*
+!xterm*font6: -*-lucidatypewriter-medium-*-*-*-20-*-*-*-*-*-*-*
+!xterm*font7: -dec-terminal-normal-r-normal-*-14-*-*-*-*-*-iso8859-*
+!xterm*faceName:Consolas:antialias=True:pixelsize=16 Liberation mono
+xterm*faceName:Anonymous Pro:antialias=True:pixelsize=16
+!xterm*faceName:Source Code Pro for Powerline:antialias=True:pixelsize=15
+xterm*faceNameDoublesize:Source Han Sans SC:style=regular:antialias=True:pixelsize=15
+!xterm*faceNameDoublesize:PMingLiU\-ExtB:style=regular:antialias=True:pixelsize=15
 
 XTerm*metaSendsEscape: true
 XTerm*eightBitInput: false
