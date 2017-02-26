@@ -48,10 +48,10 @@ beautiful.init("/home/royuz/.config/awesome/themes/default/theme.lua")
 
 -- This is used later as the default terminal and editor to run.
 --terminal = "xterm -geometry 200x60+812+655"
-terminal    = "xterm -geometry 155x50+526+400"
-terminal_up = "xterm -geometry 155x23+526+20"
-terminal_le = "xterm -geometry 58x73+1+32"
-terminal_min= "xterm -geometry 213x6+1+18"
+terminal    = "xterm -geometry 175x50+526+400"
+terminal_up = "xterm -geometry 175x23+526+18"
+terminal_le = "xterm -geometry 65x73+0+32"
+terminal_min= "xterm -geometry 240x6+0+18"
 editor = os.getenv("EDITOR") or "nano"
 editor_cmd = terminal .. " -e " .. editor
 
