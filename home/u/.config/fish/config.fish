@@ -119,3 +119,5 @@ end
 function fish_title
   echo "$PWD | $_" | sed "s|$HOME|~|g"
 end
+
+alias ls 'ls --color=never'

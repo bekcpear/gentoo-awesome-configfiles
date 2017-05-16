@@ -49,3 +49,5 @@
 # required by games-util/steam-launcher (argument)
 >=x11-libs/libX11-1.6.3 abi_x86_32
 media-libs/openal abi_x86_32
+games-util/steam-client-meta trayicon
+games-util/steam-games-meta s3tc

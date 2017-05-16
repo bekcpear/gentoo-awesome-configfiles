@@ -16,5 +16,5 @@ www-client/chromium gtk3
 # required by www-client/chromium-54.0.2840.59::gentoo
 # required by @selected
 # required by @world (argument)
->=media-libs/libvpx-1.5.0 svc
+>=media-libs/libvpx-1.5.0 svc postproc
 # net-misc/tor libressl scrypt transparent-proxy

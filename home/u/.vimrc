@@ -34,6 +34,7 @@ Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 let g:airline_powerline_fonts = 1
 set guifont=Sauce\ Code\ Powerline
+"set guifont=Anonymous\ Pro
 "Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
 "let g:powerline_pycmd = 'py3'
 "
@@ -97,6 +98,7 @@ au BufNewFile,BufRead *.php
 "+++++++++++++++++++++++++++++++++++++++++++++++++++++++
 "+ older +++++++++++++++++++++++++++++++++++++++++++++++
 "+++++++++++++++++++++++++++++++++++++++++++++++++++++++
+set pastetoggle=<F2>
 set encoding=utf-8
 set termencoding=utf-8  
 set fileencodings=utf-8,ucs-bom,gbk,default,latin1 
@@ -123,6 +125,7 @@ endif
 set t_Co=256
 set backupdir=~/.vimbak
 set ts=2
+set sw=2
 set expandtab
 
 set autoindent

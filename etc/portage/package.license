@@ -2,3 +2,12 @@
 >=games-fps/ut2004-demo-3334 ut2003-demo
 # required by www-plugins/adobe-flash (argument)
 >=www-plugins/adobe-flash-23.0.0.185 AdobeFlash-11.x
+# required by google-chrome (argument)
+>=www-client/google-chrome-57.0.2987.133 google-chrome
+# required by app-emulation/virtualbox-bin (argument)
+=app-emulation/virtualbox-bin-5.0.32.112930 PUEL
+# required by virtual/jdk-1.8.0-r3::gentoo
+# required by virtual/jre-1.8.0-r1::gentoo
+# required by @selected
+# required by @world (argument)
+>=dev-java/oracle-jdk-bin-1.8.0.121 Oracle-BCLA-JavaSE

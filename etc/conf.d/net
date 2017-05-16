@@ -8,19 +8,19 @@ modules="iproute2"
 #                  240e:ec:4412:71f2::/64 via 240e:ec:4412:71f2:ae9e:17ff:ef79:ffec"
 #dns_servers_enp0s31f6="2001:4860:4860::8888 119.29.29.29 208.67.222.222 223.5.5.5"
 
-tuntap_tap0="tap"
-config_tap0=null
-config_enp0s31f6=null
+#tuntap_tap0="tap"
+#config_tap0=null
+#config_enp0s31f6=null
 
 #config_br0="fe80::ae9e:17ff:fe79:ffed/64"
 #routes_br0="default via fe80::ae9e:17ff:fe79:ffec"     
 #config_br0="192.168.1.199/24 240e:ec:4412:95be::199/64"
-config_br0="10.0.7.19/24"
-routes_br0="default via 10.0.7.1
-            2001:470:f130::/48 dev br0
-            default via 2001:470:f130::1 dev br0"
+config_enp0s31f6="10.0.7.19/24"
+routes_enp0s31f6="default via 10.0.7.1
+            2001:470:f130::/48 dev enp0s31f6
+            default via 2001:470:f130::1 dev enp0s31f6"
 #default via 240e:ec:4412:71f2:ae9e:17ff:ef79:ffec"
 #default via 240e:ec:4412:71f2:bc23:f52:a7a9:8a1b"
-dns_servers_br0="119.29.29.29 2001:4860:4860::8888 208.67.222.222 223.5.5.5"
-bridge_br0="enp0s31f6 tap0"
-rc_net_br0_need="net.enp0s31f6 net.tap0"
+dns_servers_enp0s31f6="119.29.29.29 2001:4860:4860::8888 208.67.222.222 223.5.5.5"
+#bridge_br0="enp0s31f6 tap0"
+#rc_net_br0_need="net.enp0s31f6 net.tap0"

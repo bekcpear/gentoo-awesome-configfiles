@@ -1,2 +1,3 @@
 net-analyzer/wireshark qt5 -qt4
 net-irc/irssi socks5
+net-wireless/wpa_supplicant qt5 -qt4
